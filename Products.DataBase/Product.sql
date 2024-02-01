@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Product]
+(
+	[ProductId] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY DEFAULT NEWID(), 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Description] NVARCHAR(254) NOT NULL, 
+    [Stock] FLOAT NOT NULL DEFAULT 0, 
+    [Price] FLOAT NOT NULL DEFAULT 0, 
+    [Status] BIT NOT NULL DEFAULT 1
+)

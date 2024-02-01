@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Entities", "Produc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.BusinessModels", "Products.BusinessModels\Products.BusinessModels.csproj", "{F29EB7A1-0B5E-4835-A87E-5A7F49AEA416}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Products.DataBase", "Products.DataBase\Products.DataBase.sqlproj", "{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,12 @@ Global
 		{F29EB7A1-0B5E-4835-A87E-5A7F49AEA416}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F29EB7A1-0B5E-4835-A87E-5A7F49AEA416}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F29EB7A1-0B5E-4835-A87E-5A7F49AEA416}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
