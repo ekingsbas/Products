@@ -1,25 +1,33 @@
 ﻿using Products.Business.Contracts;
+using Products.BusinessModels.Commands;
 using Products.BusinessModels.Product;
+using Products.BusinessModels.Queries;
 using Products.Data.Contracts;
 
 namespace Products.Business.Services
 {
-    public class ProductService : BaseService<ProductModel>, IProductService
+    public class ProductService : IProductService
     {
-        private readonly IProductRepository _productRepository;
+        private readonly IQueryHandler<GetProductByIdQuery, ProductModel> _getProductByIdQueryHandler;
+        private readonly ICommandHandler<CreateProductCommand> _createProductCommandHandler;
 
-        public ProductService(IProductRepository productRepository) : base(productRepository)
+        public ProductService(
+            IQueryHandler<GetProductByIdQuery, ProductModel> getProductByIdQueryHandler,
+            ICommandHandler<CreateProductCommand> createProductCommandHandler)
         {
-            _productRepository = productRepository;
+            _getProductByIdQueryHandler = getProductByIdQueryHandler;
+            _createProductCommandHandler = createProductCommandHandler;
         }
 
-        public async Task<IEnumerable<ProductModel>> GetProductsByNameAsync(string name)
+        public async Task<ProductModel> GetProductByIdAsync(Guid id)
         {
-            var product = await _productRepository.GetProductsByNameAsync(name);
-
-            var dto 
+            var query = new GetProductByIdQuery(id);
+            return await _getProductByIdQueryHandler.HandleAsync(query);
         }
-        
+
+        public async Task CreateProductAsync(CreateProductCommand command)
+        {
+            await _createProductCommandHandler.HandleAsync(command);
+        }
     }
-
 }

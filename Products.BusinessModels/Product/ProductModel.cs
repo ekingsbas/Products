@@ -14,7 +14,7 @@ namespace Products.BusinessModels.Product
         public double Stock { get; set; } = 0;
         public double Price { get; set; } = 0;
         public bool Status { get; set; } = true;
-        public string StatusName? { get; set; }
+        public string? StatusName { get; set; }
         public double Discount { get; set; }
         public double FinalPrice { get; set; } 
     }

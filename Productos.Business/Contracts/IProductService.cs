@@ -1,14 +1,11 @@
-﻿using Products.BusinessModels.Product;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Products.BusinessModels.Commands;
+using Products.BusinessModels.Product;
 
 namespace Products.Business.Contracts
 {
-    public interface IProductService : IBaseService<ProductModel>
+    public interface IProductService
     {
-        Task<IEnumerable<ProductModel>> GetProductsByNameAsync(string name);
+        Task<ProductModel> GetProductByIdAsync(Guid id);
+        Task CreateProductAsync(CreateProductCommand command);
     }
 }
