@@ -35,9 +35,12 @@ namespace Products.Api
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddMemoryCache();
+
             // Configure services
-            builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<ICacheService, CacheService>();
+            builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<IExternalDiscountService, ExternalDiscountService>();
 
             // Configure command handlers
