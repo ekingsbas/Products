@@ -35,7 +35,7 @@ namespace Products.Business.Test
 
             var externalDiscountServiceMock = new Mock<IExternalDiscountService>();
             externalDiscountServiceMock.Setup(service => service.GetDiscountAsync())
-                                       .Returns(10); // Simulate a discount value
+                                       .Returns(Task.FromResult((short)10)); // Simulate a discount value
 
             var productService = new ProductService(queryHandlerMock.Object, null, null, cacheServiceMock.Object, externalDiscountServiceMock.Object);
 
@@ -101,7 +101,7 @@ namespace Products.Business.Test
 
             var externalDiscountServiceMock = new Mock<IExternalDiscountService>();
             externalDiscountServiceMock.Setup(service => service.GetDiscountAsync())
-                                       .Returns(20); // Simulate a discount value
+                                       .Returns(Task.FromResult((short)20)); // Simulate a discount value
 
             var productService = new ProductService(queryHandlerMock.Object, null, null, cacheServiceMock.Object, externalDiscountServiceMock.Object);
 
@@ -113,8 +113,7 @@ namespace Products.Business.Test
             Assert.Greater(result.FinalPrice, 0);
         }
 
-        // Add more test methods for other scenarios...
-
+        
         [Test]
         public async Task CreateProductAsync_CallsCreateCommandHandler_WithCorrectCommand()
         {
