@@ -5,5 +5,5 @@
     [Description] NVARCHAR(254) NOT NULL, 
     [Stock] FLOAT NOT NULL DEFAULT 0, 
     [Price] FLOAT NOT NULL DEFAULT 0, 
-    [Status] BIT NOT NULL DEFAULT 1
+    [Status] TINYINT NOT NULL DEFAULT 1
 )

@@ -1,4 +1,7 @@
-﻿namespace Products.Business.Contracts
+﻿using Products.BusinessModels.Commands;
+using Products.BusinessModels.Product;
+
+namespace Products.Business.Contracts
 {
     public interface ICommandHandler<TCommand>
     {

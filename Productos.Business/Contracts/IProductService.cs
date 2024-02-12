@@ -7,5 +7,6 @@ namespace Products.Business.Contracts
     {
         Task<ProductModel> GetProductByIdAsync(Guid id);
         Task CreateProductAsync(CreateProductCommand command);
+        Task UpdateProductAsync(UpdateProductCommand command);
     }
 }

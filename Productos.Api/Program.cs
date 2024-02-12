@@ -1,5 +1,6 @@
 
 using Microsoft.EntityFrameworkCore;
+using Products.Api.Middleware;
 using Products.Data;
 
 namespace Products.Api
@@ -36,6 +37,9 @@ namespace Products.Api
             }
 
             app.UseAuthorization();
+            app.UseMiddleware<RequestLoggingMiddleware>();
+
+            app.UseRouting();
 
 
             app.MapControllers();
