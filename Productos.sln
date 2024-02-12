@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Api", "Productos.Api\Products.Api.csproj", "{3C841C0E-2CE6-42EA-A7FE-F90929BB7072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.Api", "Productos.Api\Products.Api.csproj", "{3C841C0E-2CE6-42EA-A7FE-F90929BB7072}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Business", "Productos.Business\Products.Business.csproj", "{5436CA04-E1E2-4DE4-8C5B-BA5609EBDC5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.Business", "Productos.Business\Products.Business.csproj", "{5436CA04-E1E2-4DE4-8C5B-BA5609EBDC5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Data", "Productos.Data\Products.Data.csproj", "{19E6DF8E-E777-4253-A56E-DFB719DCD3F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.Data", "Productos.Data\Products.Data.csproj", "{19E6DF8E-E777-4253-A56E-DFB719DCD3F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Entities", "Products.Entities\Products.Entities.csproj", "{9A01CBE6-9B81-4234-A8B4-9C0B4E832CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.Entities", "Products.Entities\Products.Entities.csproj", "{9A01CBE6-9B81-4234-A8B4-9C0B4E832CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.BusinessModels", "Products.BusinessModels\Products.BusinessModels.csproj", "{F29EB7A1-0B5E-4835-A87E-5A7F49AEA416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Products.BusinessModels", "Products.BusinessModels\Products.BusinessModels.csproj", "{F29EB7A1-0B5E-4835-A87E-5A7F49AEA416}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Products.DataBase", "Products.DataBase\Products.DataBase.sqlproj", "{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Business.Test", "Products.Business.Test\Products.Business.Test.csproj", "{BBE81484-6572-4EC2-B81E-36F76C644426}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F884EAB-0BA5-4678-A84A-BC272B57A9EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BBE81484-6572-4EC2-B81E-36F76C644426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE81484-6572-4EC2-B81E-36F76C644426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE81484-6572-4EC2-B81E-36F76C644426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE81484-6572-4EC2-B81E-36F76C644426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

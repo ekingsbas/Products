@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Products.Entities
 {
+    [Table("Product")]
     public class ProductEntity
     {
         [Key]

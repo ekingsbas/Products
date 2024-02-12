@@ -53,7 +53,7 @@ namespace Products.Api
             // Add HttpClient for external services
             builder.Services.AddHttpClient<IExternalDiscountService, ExternalDiscountService>(client =>
             {
-                client.BaseAddress = new Uri("https://api.example.com/");
+                client.BaseAddress = new Uri("http://www.randomnumberapi.com/");
             });
 
             var app = builder.Build();

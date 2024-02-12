@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Products.Business.Contracts;
 using Products.BusinessModels.Commands;
+using Products.BusinessModels.Product;
 
 namespace Products.Api.Controllers
 {
@@ -16,6 +17,8 @@ namespace Products.Api.Controllers
         }
 
         [HttpGet("{id}")]
+        [Produces("application/json")]
+        [ProducesResponseType(typeof(ProductModel), 200)] 
         public async Task<IActionResult> GetProduct(Guid id)
         {
             try
@@ -25,7 +28,7 @@ namespace Products.Api.Controllers
                 {
                     return NotFound();
                 }
-                return Ok(product);
+                return StatusCode(200, product);            
             }
             catch (Exception ex)
             {
@@ -45,7 +48,7 @@ namespace Products.Api.Controllers
 
                 await _productService.CreateProductAsync(command);
                 
-                return StatusCode(201);
+                return StatusCode(201, "Product successfully created!");
             }
             catch (Exception ex)
             {
@@ -65,7 +68,7 @@ namespace Products.Api.Controllers
 
                 await _productService.UpdateProductAsync(command);
 
-                return NoContent(); 
+                return StatusCode(204, "Product successfully created!");
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
 ﻿using Products.Business.Contracts;
+using System.Text.Json;
 
 namespace Products.Business.Services
 {
@@ -20,8 +21,11 @@ namespace Products.Business.Services
             {
                 string responseBody = await response.Content.ReadAsStringAsync();
 
-                if (short.TryParse(responseBody.Trim('[', ']'), out short discount))
+                var integers = JsonSerializer.Deserialize<short[]>(responseBody);
+                if (integers != null && integers.Length > 0)
                 {
+                    var discount = integers[0]; 
+                                                
                     return discount;
                 }
                 else

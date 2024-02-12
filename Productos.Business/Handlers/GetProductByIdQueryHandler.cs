@@ -18,8 +18,13 @@ namespace Products.Business.Handlers
         public async Task<ProductModel> HandleAsync(GetProductByIdQuery query)
         {
             var product = await _productRepository.GetByIdAsync(query.Id);
+
+            if (product == null)
+                return null;
+
             return new ProductModel
             {
+                ProductId = product.ProductId,
                 Description = product.Description,
                 Name = product.Name,
                 Price = product.Price,

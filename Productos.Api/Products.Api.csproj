@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
+    <InvariantGlobalization>false</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Productos.Business\Products.Business.csproj" />
     <ProjectReference Include="..\Productos.Data\Products.Data.csproj" />
+    <ProjectReference Include="..\Products.BusinessModels\Products.BusinessModels.csproj" />
   </ItemGroup>
 
 </Project>

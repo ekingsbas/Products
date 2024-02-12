@@ -1,0 +1,86 @@
+Request /api/Product/27e018e1-b24f-4ae8-8276-19774081dd05 received at 12/02/2024 03:51:45 a. m.
+Executed in 14283 ms
+
+Request /api/Product/27e018e1-b24f-4ae8-8276-19774081dd05 received at 12/02/2024 03:52:46 a. m.
+Executed in 8241 ms
+
+Request /api/Product/27e018e1-b24f-4ae8-8276-19774081dd05 received at 12/02/2024 03:53:47 a. m.
+Executed in 11679 ms
+
+Request /api/Product/e4372a7a-328f-4cef-9713-a82274e40bb1 received at 12/02/2024 03:57:24 a. m.
+Executed in 10454 ms
+
+Request /api/Product/e4372a7a-328f-4cef-9713-a82274e40bb1 received at 12/02/2024 03:58:19 a. m.
+Executed in 2801 ms
+
+Request /api/Product/29cb0ac5-4268-4dc7-836f-f14e8761cf95 received at 12/02/2024 04:03:18 a. m.
+Executed in 24777 ms
+
+Request /api/Product received at 12/02/2024 04:07:49 a. m.
+Executed in 3421 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:10:03 a. m.
+Executed in 6417 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:19:34 a. m.
+Executed in 49454 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:27:59 a. m.
+Executed in 52338 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:29:40 a. m.
+Executed in 20601 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:30:26 a. m.
+Executed in 7393 ms
+
+Request /favicon.ico received at 12/02/2024 04:30:34 a. m.
+Executed in 1 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:30:43 a. m.
+Executed in 95 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:39:11 a. m.
+Executed in 1278 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:39:57 a. m.
+Executed in 135 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:44:35 a. m.
+Executed in 1370 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:45:00 a. m.
+Executed in 146 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:47:35 a. m.
+Executed in 1223 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:48:23 a. m.
+Executed in 1186 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:49:13 a. m.
+Executed in 1284 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:53:54 a. m.
+Executed in 1301 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 04:54:58 a. m.
+Executed in 140 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 05:03:53 a. m.
+Executed in 6423 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 05:04:49 a. m.
+Executed in 9851 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 05:08:08 a. m.
+Executed in 1262 ms
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 05:23:07 a. m.
+Executed in 1281 ms
+Response body: {"productId":"fd2a8d3c-a92a-4a05-f26d-08dc2b802f45","name":"Paleta Payaso","description":"Paleta Payaso de chocolate y gomitas","stock":10,"price":10,"status":1,"statusName":"Active","discount":68,"finalPrice":3.2}
+
+Request /api/Product/FD2A8D3C-A92A-4A05-F26D-08DC2B802F45 received at 12/02/2024 05:27:58 a. m.
+Executed in 1248 ms
+Response body: {"productId":"fd2a8d3c-a92a-4a05-f26d-08dc2b802f45","name":"Paleta Payaso","description":"Paleta Payaso de chocolate y gomitas","stock":10,"price":10,"status":1,"statusName":"Active","discount":67,"finalPrice":3.3}
+
