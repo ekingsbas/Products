@@ -6,7 +6,7 @@
         public string Description { get; set; }
         public double Stock { get; set; } = 0;
         public double Price { get; set; } = 0;
-        public bool Status { get; set; } = true;
+        public short Status { get; set; } = 1;
         public string? StatusName { get; set; }
         public double Discount { get; set; }
         public double FinalPrice { get; set; }
@@ -17,7 +17,7 @@
                 string description, 
                 double stock, 
                 double price, 
-                bool status
+                short status
             )
         {
             Name = name;

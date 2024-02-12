@@ -18,10 +18,8 @@ namespace Products.Business.Services
 
             if (response.IsSuccessStatusCode)
             {
-                // Leer el contenido de la respuesta
                 string responseBody = await response.Content.ReadAsStringAsync();
 
-                // Extraer el valor de descuento de la respuesta
                 if (short.TryParse(responseBody.Trim('[', ']'), out short discount))
                 {
                     return discount;
@@ -33,7 +31,6 @@ namespace Products.Business.Services
             }
             else
             {
-                // Manejar el error de la solicitud HTTP
                 throw new HttpRequestException($"Failed to retrieve discount from external API. Status code: {response.StatusCode}");
             }
         }

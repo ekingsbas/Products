@@ -14,7 +14,7 @@ namespace Products.BusinessModels.Commands
         public string? Description { get; set; }
         public double Stock { get; set; }
         public double Price { get; set; }
-        public bool Status { get; set; }
+        public short Status { get; set; }
         
     }
 }
