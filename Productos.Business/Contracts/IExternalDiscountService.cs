@@ -2,6 +2,6 @@
 {
     public interface IExternalDiscountService
     {
-        Task<int> GetDiscountAsync();
+        Task<short> GetDiscountAsync();
     }
 }

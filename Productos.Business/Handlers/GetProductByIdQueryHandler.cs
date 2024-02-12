@@ -6,7 +6,7 @@ using Products.Entities;
 
 namespace Products.Business.Handlers
 {
-    public class GetProductByIdQueryHandler : IQueryHandler<GetProductByIdQuery, ProductEntity>
+    public class GetProductByIdQueryHandler : IQueryHandler<GetProductByIdQuery, ProductModel>
     {
         private readonly IProductRepository _productRepository;
 
@@ -15,9 +15,17 @@ namespace Products.Business.Handlers
             _productRepository = productRepository;
         }
 
-        public async Task<ProductEntity> HandleAsync(GetProductByIdQuery query)
+        public async Task<ProductModel> HandleAsync(GetProductByIdQuery query)
         {
-            return await _productRepository.GetByIdAsync(query.Id);
+            var product = await _productRepository.GetByIdAsync(query.Id);
+            return new ProductModel
+            {
+                Description = product.Description,
+                Name = product.Name,
+                Price = product.Price,
+                Status = product.Status,
+                Stock = product.Stock,
+            };
         }
     }
 }

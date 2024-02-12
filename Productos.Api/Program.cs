@@ -1,7 +1,15 @@
 
 using Microsoft.EntityFrameworkCore;
 using Products.Api.Middleware;
+using Products.Business.Contracts;
+using Products.Business.Handlers;
+using Products.Business.Services;
+using Products.BusinessModels.Commands;
+using Products.BusinessModels.Product;
+using Products.BusinessModels.Queries;
 using Products.Data;
+using Products.Data.Contracts;
+using Products.Data.Repositories;
 
 namespace Products.Api
 {
@@ -26,6 +34,24 @@ namespace Products.Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            // Configure services
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
+            builder.Services.AddScoped<IExternalDiscountService, ExternalDiscountService>();
+
+            // Configure command handlers
+            builder.Services.AddScoped<ICommandHandler<CreateProductCommand>, CreateProductCommandHandler>();
+            builder.Services.AddScoped<ICommandHandler<UpdateProductCommand>, UpdateProductCommandHandler>();
+
+            // Configure query handlers
+            builder.Services.AddScoped<IQueryHandler<GetProductByIdQuery, ProductModel>, GetProductByIdQueryHandler>();
+
+            // Add HttpClient for external services
+            builder.Services.AddHttpClient<IExternalDiscountService, ExternalDiscountService>(client =>
+            {
+                client.BaseAddress = new Uri("https://api.example.com/");
+            });
 
             var app = builder.Build();
 
